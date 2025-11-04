@@ -1,20 +1,19 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormStatus } from "react-dom";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-  SheetTrigger,
   SheetFooter,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { submitCase, type FormState } from "@/app/actions/submit-case";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useActionState } from "react";
 import { Loader2 } from "lucide-react";
 import { AIAnalysisResult } from "./ai-analysis-result";
 import { useToast } from "@/hooks/use-toast";
@@ -35,7 +34,7 @@ const initialState: FormState = {
 
 export function CaseSubmissionSheet({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [formState, formAction] = useFormState(submitCase, initialState);
+  const [formState, formAction] = useActionState(submitCase, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
 
