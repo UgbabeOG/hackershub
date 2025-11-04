@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { submitCase, type FormState } from "@/app/actions/submit-case";
-import { useEffect, useRef, useState, useActionState } from "react";
+import { useEffect, useRef, useState, useActionState, startTransition } from "react";
 import { Loader2 } from "lucide-react";
 import { AIAnalysisResult } from "./ai-analysis-result";
 import { useToast } from "@/hooks/use-toast";
@@ -53,8 +53,11 @@ export function CaseSubmissionSheet({ children }: { children: React.ReactNode })
 
   const handleReset = () => {
       formRef.current?.reset();
-      // A bit of a hack to reset useFormState
-      formAction(new FormData());
+      // useActionState's action function must be wrapped in a transition
+      // if not being used in a form action.
+      startTransition(() => {
+        formAction(new FormData());
+      });
   }
 
   const handleOpenChange = (open: boolean) => {
