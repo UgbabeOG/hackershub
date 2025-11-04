@@ -28,11 +28,11 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-body antialiased",
+          "min-h-screen bg-background font-body antialiased flex flex-col",
           inter.variable
         )}
       >
-        {children}
+        <div className="flex-1">{children}</div>
         <Toaster />
       </body>
     </html>

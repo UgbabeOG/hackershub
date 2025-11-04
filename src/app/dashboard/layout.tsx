@@ -34,6 +34,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DashboardHeader } from "@/components/dashboard/header";
 import { Logo } from "@/components/common/logo";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Footer } from "@/components/common/footer";
 
 export default function DashboardLayout({
   children,
@@ -93,6 +94,7 @@ export default function DashboardLayout({
         <main className="flex flex-1 flex-col gap-4 p-4 lg:gap-6 lg:p-6 bg-background">
           {children}
         </main>
+        <Footer />
       </div>
     </div>
   );
