@@ -8,6 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetFooter,
+  SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
