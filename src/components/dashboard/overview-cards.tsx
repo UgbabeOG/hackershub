@@ -15,7 +15,7 @@ export function OverviewCards() {
           <DollarSign className="h-4 w-4 text-muted-foreground" />
         </CardHeader>
         <CardContent>
-          <div className="text-2xl font-bold">$30,250.00</div>
+          <div className="text-2xl font-bold">$150,000.00</div>
           <p className="text-xs text-muted-foreground">
             +18.2% from last month
           </p>

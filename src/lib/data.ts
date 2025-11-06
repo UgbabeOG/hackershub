@@ -39,8 +39,8 @@ export const fundsTrackingData = [
 export const communicationPortalData = [
   {
     id: 1,
-    name: "John Doe",
-    avatar: "JD",
+    name: "Jim Lesondak",
+    avatar: "JL",
     message: "Hi there, I've submitted my case. What are the next steps?",
     timestamp: "2024-07-20T10:30:00Z",
     isUser: true,
@@ -50,14 +50,14 @@ export const communicationPortalData = [
     name: "Emily White",
     avatar: "EW",
     message:
-      "Hello John, thank you for submitting your case. Our team is reviewing the details and the AI-powered analysis is underway. We will get back to you with the initial findings within 24 hours.",
+      "Hello Jim, thank you for submitting your case. Our team is reviewing the details and the AI-powered analysis is underway. We will get back to you with the initial findings within 24 hours.",
     timestamp: "2024-07-20T10:32:00Z",
     isUser: false,
   },
   {
     id: 3,
-    name: "John Doe",
-    avatar: "JD",
+    name: "Jim Lesondak",
+    avatar: "JL",
     message: "Great, thank you for the update!",
     timestamp: "2024-07-20T10:33:00Z",
     isUser: true,

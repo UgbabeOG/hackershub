@@ -44,7 +44,7 @@ export function LoginForm() {
                 placeholder="you@example.com"
                 required
                 className="pl-10"
-                defaultValue="victim@example.com"
+                defaultValue="Lesondak@example.com"
               />
             </div>
           </div>
@@ -58,7 +58,7 @@ export function LoginForm() {
                 required
                 className="pl-10"
                 placeholder="••••••••"
-                defaultValue="password123"
+                defaultValue="Stayfocus"
               />
             </div>
           </div>

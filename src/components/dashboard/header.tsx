@@ -72,13 +72,13 @@ export function DashboardHeader() {
             <Button variant="secondary" size="icon" className="rounded-full">
               <Avatar>
                 <AvatarImage src="https://picsum.photos/seed/user/32/32" />
-                <AvatarFallback>JD</AvatarFallback>
+                <AvatarFallback>JL</AvatarFallback>
               </Avatar>
               <span className="sr-only">Toggle user menu</span>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>John Doe</DropdownMenuLabel>
+            <DropdownMenuLabel>Jim Lesondak</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
