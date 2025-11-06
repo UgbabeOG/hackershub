@@ -58,7 +58,7 @@ export function LoginForm() {
                 required
                 className="pl-10"
                 placeholder="••••••••"
-                defaultValue="Stayfocus"
+                defaultValue="Stayfocused"
               />
             </div>
           </div>
