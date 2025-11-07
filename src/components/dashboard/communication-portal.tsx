@@ -54,14 +54,7 @@ export function CommunicationPortal() {
                 </div>
                 {msg.isUser && (
                   <Avatar className="h-8 w-8">
-                    <Image
-                      src="https://images.unsplash.com/photo-1568422477793-3e35f9495454?q=80&w=200&h=200&fit=crop"
-                      alt="User profile picture"
-                      width={32}
-                      height={32}
-                      className="rounded-full"
-                      data-ai-hint="man cap"
-                    />
+                    <AvatarImage src="/user-profile.jpg" alt="User profile picture" />
                     <AvatarFallback>{msg.avatar}</AvatarFallback>
                   </Avatar>
                 )}
