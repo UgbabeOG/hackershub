@@ -20,6 +20,7 @@ import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Logo } from "../common/logo";
 import { CaseSubmissionSheet } from "./case-submission-sheet";
+import Image from "next/image";
 
 export function DashboardHeader() {
   return (
@@ -71,14 +72,21 @@ export function DashboardHeader() {
           <DropdownMenuTrigger asChild>
             <Button variant="secondary" size="icon" className="rounded-full">
               <Avatar>
-                <AvatarImage src="https://picsum.photos/seed/user/32/32" />
+                <Image
+                  src="https://images.unsplash.com/photo-1568422477793-3e35f9495454?q=80&w=200&h=200&fit=crop"
+                  alt="User profile picture"
+                  width={32}
+                  height={32}
+                  className="rounded-full"
+                  data-ai-hint="man cap"
+                />
                 <AvatarFallback>JL</AvatarFallback>
               </Avatar>
               <span className="sr-only">Toggle user menu</span>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuLabel>James Lesondak</DropdownMenuLabel>
+            <DropdownMenuLabel>Jim Lesondak</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>

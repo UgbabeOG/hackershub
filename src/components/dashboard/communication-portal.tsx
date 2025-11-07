@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { communicationPortalData } from "@/lib/data";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 export function CommunicationPortal() {
   return (
@@ -53,7 +54,14 @@ export function CommunicationPortal() {
                 </div>
                 {msg.isUser && (
                   <Avatar className="h-8 w-8">
-                    <AvatarImage src="https://picsum.photos/seed/user/32/32" />
+                    <Image
+                      src="https://images.unsplash.com/photo-1568422477793-3e35f9495454?q=80&w=200&h=200&fit=crop"
+                      alt="User profile picture"
+                      width={32}
+                      height={32}
+                      className="rounded-full"
+                      data-ai-hint="man cap"
+                    />
                     <AvatarFallback>{msg.avatar}</AvatarFallback>
                   </Avatar>
                 )}
